@@ -41,6 +41,10 @@ ifeq ($(SUPERIOR_OFFICIAL), true)
     endif
 endif
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
+
 ifeq ($(BUILD_WITH_GAPPS),true)
 SUPERIOR_EDITION := GAPPS
 else
